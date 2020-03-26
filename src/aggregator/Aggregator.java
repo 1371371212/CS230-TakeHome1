@@ -61,9 +61,7 @@ public class Aggregator {
 	 * @return the things averaged together
 	 */
 	public double getMean() {
-		double sum = 0.0;
-		for (int i : storage)
-			sum += i;
+		double sum = getSum();
 		return sum / getSize();
 	}
 }
